@@ -106,7 +106,6 @@ td {
   color: black;
 }
 .right-colomn .contact-info {
-  font-size: 1.1rem;
   text-align: left;
 }
 
@@ -116,7 +115,7 @@ td {
 }
 
 .right-colomn i {
-  font-size: 1rem;
+  font-size: var(--heading-3-font-size);
 }
 
 /* RESPONSIVENESS */
@@ -145,7 +144,7 @@ td {
 }
 
 /* For Mobile */
-@media (max-width: 640px) {
+@media (max-width: 690px) {
   :root {
     --heading-1-font-size: 1.3rem;
     --heading-2-font-size: 0.9rem;
@@ -165,7 +164,7 @@ td {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 500px) {
   :root {
     --heading-1-font-size: 1rem;
     --heading-2-font-size: 0.8rem;
@@ -177,5 +176,24 @@ td {
   .left-colomn,
   .right-colomn {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --heading-1-font-size: 0.7rem;
+    --heading-2-font-size: 0.5rem;
+    --heading-3-font-size: 0.5rem;
+
+    --section--padding--gap: 0.5rem;
+    --section--internalpadding--gap: 0.3rem;
+  }
+  .left-colomn,
+  .right-colomn {
+    font-size: 0.6rem;
+  }
+
+  .left-colomn {
+    flex: 0 0 35%;
   }
 }
