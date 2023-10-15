@@ -164,22 +164,22 @@ td {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
   :root {
     --heading-1-font-size: 1rem;
     --heading-2-font-size: 0.8rem;
     --heading-3-font-size: 0.8rem;
 
-    --section--padding--gap: 0.9rem;
-    --section--internalpadding--gap: 0.5rem;
+    --section--padding--gap: 0.6rem;
+    --section--internalpadding--gap: 0.4rem;
   }
   .left-colomn,
   .right-colomn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   :root {
     --heading-1-font-size: 0.7rem;
     --heading-2-font-size: 0.5rem;
@@ -190,10 +190,10 @@ td {
   }
   .left-colomn,
   .right-colomn {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   .left-colomn {
-    flex: 0 0 35%;
+    flex: 0 0 38%;
   }
 }
