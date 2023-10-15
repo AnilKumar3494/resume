@@ -5,6 +5,8 @@
   --heading-2-font-size: 1.3rem;
   --heading-3-font-size: 1.1rem;
 
+  --overall-font-size: 1rem;
+
   --section--padding--gap: 1.3rem;
   --section--internalpadding--gap: 0.7rem;
 }
@@ -63,7 +65,7 @@ li {
 
 .left-colomn,
 .right-colomn {
-  font-size: 1rem;
+  font-size: var(--overall-font-size);
 }
 /* left Coloumn Styling */
 
@@ -98,7 +100,6 @@ td {
 
 /* right colomn global styling */
 .right-colomn {
-  flex: 0 0 72%;
   padding-right: 0.3rem;
   padding-left: 0.2rem;
   text-align: justify;
@@ -114,10 +115,6 @@ td {
   font-weight: 600;
 }
 
-.right-colomn i {
-  font-size: var(--heading-3-font-size);
-}
-
 /* RESPONSIVENESS */
 @media (min-width: 1110px) {
   .resume-box {
@@ -131,12 +128,14 @@ td {
     --heading-2-font-size: 1.1rem;
     --heading-3-font-size: 1.1rem;
 
+    --overall-font-size: 1rem;
+
     --section--padding--gap: 1rem;
     --section--internalpadding--gap: 0.7rem;
   }
   .left-colomn,
   .right-colomn {
-    font-size: 0.9rem;
+    font-size: var(--overall-font-size);
   }
   .resume-box {
     max-width: 750px;
@@ -144,38 +143,37 @@ td {
 }
 
 /* For Mobile */
-@media (max-width: 690px) {
+@media (max-width: 726px) {
   :root {
     --heading-1-font-size: 1.3rem;
     --heading-2-font-size: 0.9rem;
     --heading-3-font-size: 0.8rem;
+
+    --overall-font-size: 0.7rem;
 
     --section--padding--gap: 0.9rem;
     --section--internalpadding--gap: 0.5rem;
   }
   .left-colomn,
   .right-colomn {
-    font-size: 0.8rem;
-  }
-  .resume-box {
-    margin: 0;
-    width: 100%;
-    max-width: 620px;
+    font-size: var(--overall-font-size);
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 590px) {
   :root {
     --heading-1-font-size: 1rem;
-    --heading-2-font-size: 0.8rem;
-    --heading-3-font-size: 0.8rem;
+    --heading-2-font-size: 0.7rem;
+    --heading-3-font-size: 0.6rem;
+
+    --overall-font-size: 0.6rem;
 
     --section--padding--gap: 0.6rem;
     --section--internalpadding--gap: 0.4rem;
   }
   .left-colomn,
   .right-colomn {
-    font-size: 0.7rem;
+    font-size: var(--overall-font-size);
   }
 }
 
@@ -185,15 +183,38 @@ td {
     --heading-2-font-size: 0.5rem;
     --heading-3-font-size: 0.5rem;
 
+    --overall-font-size: 0.5rem;
+
     --section--padding--gap: 0.5rem;
     --section--internalpadding--gap: 0.3rem;
   }
   .left-colomn,
   .right-colomn {
-    font-size: 0.5rem;
+    font-size: var(--overall-font-size);
   }
 
   .left-colomn {
     flex: 0 0 38%;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --heading-1-font-size: 0.4rem;
+    --heading-2-font-size: 0.3rem;
+    --heading-3-font-size: 0.3rem;
+
+    --overall-font-size: 0.3rem;
+
+    --section--padding--gap: 0.3rem;
+    --section--internalpadding--gap: 0.2rem;
+  }
+  .left-colomn,
+  .right-colomn {
+    font-size: var(--overall-font-size);
+  }
+
+  .left-colomn {
+    flex: 0 0 33%;
   }
 }
