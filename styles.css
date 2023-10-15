@@ -133,12 +133,13 @@ td {
     --section--padding--gap: 1rem;
     --section--internalpadding--gap: 0.7rem;
   }
+  .resume-box {
+    margin: auto;
+    width: 95%;
+  }
   .left-colomn,
   .right-colomn {
     font-size: var(--overall-font-size);
-  }
-  .resume-box {
-    max-width: 750px;
   }
 }
 
@@ -154,9 +155,9 @@ td {
     --section--padding--gap: 0.9rem;
     --section--internalpadding--gap: 0.5rem;
   }
-  .left-colomn,
-  .right-colomn {
-    font-size: var(--overall-font-size);
+  .resume-box {
+    margin: auto;
+    width: 100%;
   }
 }
 
@@ -166,14 +167,10 @@ td {
     --heading-2-font-size: 0.7rem;
     --heading-3-font-size: 0.6rem;
 
-    --overall-font-size: 0.6rem;
+    --overall-font-size: 0.7rem;
 
     --section--padding--gap: 0.6rem;
     --section--internalpadding--gap: 0.4rem;
-  }
-  .left-colomn,
-  .right-colomn {
-    font-size: var(--overall-font-size);
   }
 }
 
@@ -188,10 +185,6 @@ td {
     --section--padding--gap: 0.5rem;
     --section--internalpadding--gap: 0.3rem;
   }
-  .left-colomn,
-  .right-colomn {
-    font-size: var(--overall-font-size);
-  }
 
   .left-colomn {
     flex: 0 0 38%;
@@ -201,17 +194,13 @@ td {
 @media (max-width: 400px) {
   :root {
     --heading-1-font-size: 0.4rem;
-    --heading-2-font-size: 0.3rem;
-    --heading-3-font-size: 0.3rem;
+    --heading-2-font-size: 0.4rem;
+    --heading-3-font-size: 0.4rem;
 
-    --overall-font-size: 0.3rem;
+    --overall-font-size: 0.4rem;
 
     --section--padding--gap: 0.3rem;
     --section--internalpadding--gap: 0.2rem;
-  }
-  .left-colomn,
-  .right-colomn {
-    font-size: var(--overall-font-size);
   }
 
   .left-colomn {
